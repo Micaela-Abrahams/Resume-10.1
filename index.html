@@ -26,30 +26,47 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!--Use # on href link tag so when user clicks on link they wont get error message-->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a> <!--Make Home Jumbotron-->
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <!--Make Home Jumbotron-->
                     </li>
-                    <li class="nav-item">
-                        
-                        <a class="nav-link" href="#">About</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Education</a></li>
+                            <li><a class="dropdown-item" href="#">Qualifications</a></li>
+                            <li><a class="dropdown-item" href="#">Experience</a></li>
+                            <li><a class="dropdown-item" href="#">Skills</a></li>
+                        </ul>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
-                
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+
+               
             </div>
         </div>
     </nav>
 
     <!--Jumbotron-->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-1">Hello World,</h1>
+            <h3 class="display-6">My name is Micaela.</h3>
+            <p class="lead">
+                <a class="btn btn-success btn-md" href="#" target="_blank" role="button">Portfolio</a>
+            </p>
+        </div>
+    </div>
+
     <!--FORM-->
     <!--CONTACT-->
     <!--FOOTER-->
