@@ -44,5 +44,25 @@ transition:all 0.3s;
   }
 
 .card{
-    align-items: center;
+    margin-left:auto;
+    margin-right: 550px;
 }
+
+/*Media query for viewport sizes 425px-1024px*/
+@media screen and (max-width:1024px) {
+  .card {
+    margin-left: 300px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .card{
+  margin-left:178px;
+  }
+}
+
+@media screen and (max-width:425px) {
+.card {
+margin-left: 600px;
+}
+  }
