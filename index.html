@@ -12,6 +12,8 @@
 
     <!--CSS Stylesheet Link Below-->
     <link rel="stylesheet" href="stylesheet2.css">
+
+
 </head>
 
 <body class="row bg-dark text-light position-relative w-100vh vh100 text-shadow">
@@ -31,7 +33,7 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <!--Make Home Jumbotron-->
+
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -47,11 +49,20 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
+    </nav>
+
+    <!--BREADCRUMBS-->
+    <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#qualifications">About</a></li>
+            <li class="breadcrumb-item"><a href="#contact"></a>Contact</li>
+        </ol>
     </nav>
 
     <!--Jumbotron-->
@@ -241,29 +252,110 @@
         <h1 id="skills">Skills</h1>
 
         <!--HTML-->
+        <button type="button" class="collapsible"><img src="Icons/html5.png" alt="html5logo"> HTML</button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.
+            </p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore placeat, asperiores molestias neque
+                id eligendi tempora pariatur veniam impedit aspernatur delectus unde sint, ex cum exercitationem
+                repudiandae. Beatae, tempora nobis!</p>
+        </div>
+
         <!--CSS-->
+        <button type="button" class="collapsible"><img src="Icons/css3.png" alt="css3logo"> CSS</button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt aspernatur dolor optio,
+                exercitationem, voluptas error vero corrupti recusandae deserunt quos facere officiis. Voluptas
+                inventore explicabo assumenda nemo. Expedita, quos vitae.</p>
+        </div>
+
         <!--BOOTSTRAP-->
+        <button type="button" class="collapsible"><img src="Icons/bootstrap.png" alt="bootstraplogo"> BOOTSTRAP</button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. In metus vulputate eu scelerisque felis imperdiet proin. A diam maecenas sed enim
+                ut sem viverra. Sed tempus urna et pharetra pharetra massa. Arcu bibendum at varius vel. Tortor aliquam
+                nulla facilisi cras fermentum odio eu. Sapien pellentesque habitant morbi tristique senectus et netus et
+                malesuada. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. Nec nam aliquam
+                sem et tortor consequat id porta. Blandit cursus risus at ultrices. Ipsum dolor sit amet consectetur
+                adipiscing elit pellentesque habitant morbi. Velit egestas dui id ornare arcu odio. Venenatis cras sed
+                felis eget. Condimentum mattis pellentesque id nibh. Sagittis id consectetur purus ut faucibus. Pharetra
+                diam sit amet nisl suscipit adipiscing bibendum. Ornare arcu dui vivamus arcu felis bibendum ut
+                tristique. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit. Convallis aenean et
+                tortor at.</p>
+        </div>
+
         <!--JAVASCRIPT-->
+        <button type="button" class="collapsible"><img src="Icons/js.png" alt="jslogo"> JAVASCRIPT</button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. In metus vulputate eu scelerisque felis imperdiet proin. A diam maecenas sed enim
+                ut sem viverra. Sed tempus urna et pharetra pharetra massa. Arcu bibendum at varius vel. Tortor aliquam
+                nulla facilisi cras fermentum odio eu. Sapien pellentesque habitant morbi tristique senectus et netus et
+                malesuada. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. Nec nam aliquam
+                sem et tortor consequat id porta. Blandit cursus risus at ultrices. Ipsum dolor sit amet consectetur
+                adipiscing elit pellentesque habitant morbi. Velit egestas dui id ornare arcu odio. Venenatis cras sed
+                felis eget. Condimentum mattis pellentesque id nibh. Sagittis id consectetur purus ut faucibus. Pharetra
+                diam sit amet nisl suscipit adipiscing bibendum. Ornare arcu dui vivamus arcu felis bibendum ut
+                tristique. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit. Convallis aenean et
+                tortor at.</p>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <!--CONTACT FORM--->
+        <h3 id="contact">Get In Touch</h3>
+        <form action="" method="get">
+            <div id="Main-Container">
+
+                <div>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="name" placeholder="Enter Your Name" required>
+                </div>
+
+                <div>
+                    <label for="sname">Surname:</label>
+                    <input type="text" id="sname" name="name" placeholder="Enter Your Surname" required>
+                </div>
+
+                <div>
+                    <label for="number">Contact:</label>
+                    <input type="text" id="number" name="name" placeholder="Contact Number" required>
+                </div>
+
+                <div>
+                    <label for="Email">Email:</label>
+                    <input type="email" id="Email" name="Email" placeholder="Enter a valid email address" required>
+                </div>
+
+                <p>Message</p>
+                <div>
+                    <textarea rows="4"></textarea>
+                </div>
+                <div class="Submit">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!--FORM-->
-        <!--CONTACT-->
         <!--FOOTER-->
 
 
@@ -275,6 +367,25 @@
 
         <!--JS Link Below-->
         <script src="js/bootstrap.bundle.min.js"></script>
+
+        <!--SCRIPT FOR THE COLLAPSBLES IN SKILLS-->
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            }
+        </script>
+
 </body>
 
 </html>

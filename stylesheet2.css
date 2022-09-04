@@ -1,3 +1,10 @@
+* {
+  padding: 1rem;
+}
+
+
+
+
 /*Added margin to left side of text to move it away from the edge of the margin*/
   .navbar-brand{
     margin-left: 30px;
@@ -32,6 +39,11 @@
     width: 100%;
 }
 
+/*Style for the Breadcrumbs*/
+
+
+
+
 /*Styling for the Jumbotron*/
 .jumbotron {
     background-size: cover;
@@ -47,7 +59,7 @@
 
   /*Style for the Carousel Images*/
 .carousel-inner{
-  margin-left: 565px;
+  margin-left: 575px;
 }
 
   /*Style for the Contents*/
@@ -72,7 +84,7 @@
   width: 330px;
   height: 498px;
   margin: 10px;
-  background:#198754;
+  background:rgb(62, 62, 62);
   text-align: center;
   padding-left: 2%;
   padding-right: 2%;
@@ -84,11 +96,95 @@
 }
 
 .card:hover{
-  background-color: rgb(62, 62, 62);
+  background-color:#198754; 
   transform: scale(1.05);
   transition: 0.5s;
   cursor: pointer;
 }
+
+/*Style for the dropdowns in Skills section*/
+.collapsible {
+  background-color: rgb(62, 62, 62);
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  margin: 5px;
+}
+
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  color: black;
+}
+
+/*Style for the Contact Form*/
+#Main-Container{
+  display: inline;
+  justify-content: center;
+  padding: 2px 2px 2px 0;
+}
+
+form {
+  width: 500px;
+ 
+  align-items:center;
+  background: rgb(62, 62, 62);
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+
+input, textarea {
+  width: calc(100% - 18px);
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid grey;
+  outline: none;
+  }
+
+input {
+  margin: 10px;
+}
+
+input:hover {
+  border: solid 3px #e68c17;
+  border-radius: 5px;
+}
+
+
+button:hover {
+  border: solid 3px #e68c17;
+  border-radius: 5px;
+}
+
+.Submit {
+  align-items: center;
+  justify-content: center;
+  line-height: 2;
+  margin-right: 180px;
+}
+
+
+
+
+
+
 
 
 
