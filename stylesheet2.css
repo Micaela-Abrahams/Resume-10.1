@@ -1,8 +1,8 @@
-* {
-  padding: 1rem;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-
 
 
 /*Added margin to left side of text to move it away from the edge of the margin*/
@@ -31,7 +31,7 @@
     height: 2px;
     background: #198754;
     display: block;
-    margin: left;
+ /  margin: left; 
     transition: 0.5s;
 }
 
@@ -57,9 +57,9 @@
     background-color: rgb(62, 62, 62);
   }
 
-  /*Style for the Carousel Images*/
-.carousel-inner{
-  margin-left: 575px;
+/*Style to center the images in the carousel*/
+.carousel-inner .carousel-item img{
+margin: auto;
 }
 
   /*Style for the Contents*/
