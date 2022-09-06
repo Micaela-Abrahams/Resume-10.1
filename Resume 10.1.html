@@ -19,8 +19,8 @@
 <body class="row bg-dark text-light position-relative w-100 vh100 text-shadow">
     <!--All text written will have a text shadow, if removed there will be no text shadow-->
 
-    <!--NAVIGATION & BREADCRUMBS-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!--NAVIGATION-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Digital Resume</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -54,16 +54,18 @@
                 </ul>
             </div>
         </div>
+
+        <!--BREADCRUMBS-->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#qualifications">About</a></li>
+                <li class="breadcrumb-item"><a href="#contact"></a>Contact</li>
+            </ol>
+        </nav>
+
     </nav>
 
-    <!--BREADCRUMBS-->
-    <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#qualifications">About</a></li>
-            <li class="breadcrumb-item"><a href="#contact"></a>Contact</li>
-        </ol>
-    </nav>
 
     <!--Jumbotron-->
     <div class="jumbotron jumbotron-fluid text-center">
@@ -361,11 +363,22 @@
         <!--FOOTER-->
         <footer class="row-bg-light text-light position-relative w-100 vh100 text-shadow">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+                <!--Icon for LinkedIn-->
+                <a href="https://www.linkedin.com/" class="linkedin" target="_blank">
+                    <img class"icons" src="Icons/linkedin-4-24.png" alt="LinkedinLogo" width="35"> </a>
+
+                <!--Icon for Facebook-->
+                <a href="https://www.facebook.com/" class="facebook" target="_blank">
+                    <img class"icons" src="Icons/facebook-4-24.png" alt="facebooklogo" width="35"> </a>
+
+                <!--Icon for Gmail-->
+                <a href="https://gmail.google.com/inbox/" class="gmail" target="_blank">
+                    <img class"icons" src="Icons/email-14-24.png" alt="gmaillogo" width="35"> </a>
+
+                <!--Icon for Github-->
+                <a href="https://github.com/" class="github" target="_blank">
+                    <img class"icons" src="Icons/github-9-24.png" alt="github" width="35"> </a>
+                <a href="" target="_blank"></a>
             </ul>
             <p class="text-center text-muted">© Digital Resume 2022 </p>
         </footer>

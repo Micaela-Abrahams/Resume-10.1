@@ -134,21 +134,24 @@ margin: auto;
 }
 
 /*Style for the Contact Form*/
+
+#contact{
+  text-align: center;
+}
+
 #Main-Container{
   display: inline;
   justify-content: center;
-  padding: 2px 2px 2px 0;
+  padding: 2px 2px 2px 1px;
 }
-
 form {
   width: 500px;
- 
   align-items:center;
   background: rgb(62, 62, 62);
   padding-left: 10px;
   border-radius: 5px;
+  margin-left: 32%;
 }
-
 
 input, textarea {
   width: calc(100% - 18px);
@@ -167,8 +170,7 @@ input:hover {
   border-radius: 5px;
 }
 
-
-button:hover {
+form button:hover {
   border: solid 3px #e68c17;
   border-radius: 5px;
 }
@@ -177,9 +179,15 @@ button:hover {
   align-items: center;
   justify-content: center;
   line-height: 2;
-  margin-right: 180px;
+  margin-left: 40%;
 }
 
+
+
+/*Style to add spacing between the Icons in the footer */
+footer a {
+  margin: 5px;  
+}
 
 
 
