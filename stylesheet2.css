@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+/*Added a background image to add more character*/
+body{
+width: 100%;
+position: fixed;
+}
 
 /*Added margin to left side of text to move it away from the edge of the margin*/
   .navbar-brand{
@@ -52,12 +57,12 @@ display: inline-block;
 .breadcrumb-items:not(:last-of-type)::after{
   content: '/';
   margin: 0 5px;
-  color: gray;
+  color: white;
 }
 
 .breadcrumb-link{
   text-decoration: none;
-  color: gray;
+  color: white;
 }
 
 .breadcrumb-link:hover{
@@ -77,6 +82,10 @@ display: inline-block;
     background-size: cover;
     height:900px;
     margin-top: 20px;
+
+   /*Background Image is too distracting - therefore removed*/ 
+   /* background-image: url(images/pattern\ 1.1.jpg);
+    background-size: cover;*/
   }
 
   .jumbotron img:hover{
@@ -85,12 +94,12 @@ display: inline-block;
     background-color: rgb(62, 62, 62);
   }
 
-/*Style to center the images in the carousel*/
+/*Style to center the images in the carousel as the images are on the left*/
 .carousel-inner .carousel-item img{
 margin: auto;
 }
 
-  /*Style for the Contents*/
+  /*Style for the Contents to make the text line underneath equally*/
 #container{
   text-align: start;
   padding-left: 5%;
@@ -109,9 +118,9 @@ margin: auto;
 }
 
 .card{
-  width: 330px;
-  height: 498px;
-  margin: 10px;
+  width: 30%;
+  height: 50%;
+  margin: 1.5%;
   background:rgb(62, 62, 62);
   text-align: center;
   padding-left: 2%;
@@ -173,7 +182,7 @@ margin: auto;
   padding: 2px 2px 2px 1px;
 }
 form {
-  width: 500px;
+  width: 40%;
   align-items:center;
   background: rgb(62, 62, 62);
   padding-left: 10px;
@@ -212,37 +221,34 @@ form button:hover {
 
 
 
-/*Style to add spacing between the Icons in the footer */
+/*Style to add spacing between the Icons in the footer because they were clustered together */
 footer a {
   margin: 5px;  
 }
 
+/*Media Queries to make certain elements more centered/adaptive*/
 
+@media screen and (max-width: 1024px){
+  /*Media query for the Skills container cards to make it adaptive to the viewport size*/
+  .container{
+    width: 100%;
+  }
 
+  form{
+    width: 50%;
+    margin: auto;
+  }
 
-
-
-
-
-
-/*Media query for viewport sizes 425px-1024px*/
-@media screen and (max-width:1024px) {
-#Job 3{
-  justify-content: center;
-}
+  #contact{
+    text-align: center;
+  }
 }
 
 @media screen and (max-width:768px) {
   .card{
-  margin-left:178px;
+    width: 100%;
+  }
+  form{
+    width: 100%;
   }
 }
-
-/*Need to fix the image to center it at 425px or less*
-@media screen and (max-width:425px) {
-  .card {
-justify-content: center;
-align-items: center;}
-  }
-
-
