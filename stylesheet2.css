@@ -31,7 +31,7 @@
     height: 2px;
     background: #198754;
     display: block;
- /  margin: left; 
+   margin: left; 
     transition: 0.5s;
 }
 
@@ -40,8 +40,36 @@
 }
 
 /*Style for the Breadcrumbs*/
+.breadcrumbs{
+  padding: 5px;
+  font-family: sans-serif;
+}
+
+.breadcrumb-items{
+display: inline-block;
+}
+
+.breadcrumb-items:not(:last-of-type)::after{
+  content: '/';
+  margin: 0 5px;
+  color: gray;
+}
+
+.breadcrumb-link{
+  text-decoration: none;
+  color: gray;
+}
+
+.breadcrumb-link:hover{
+  text-decoration: underline;
+  color: #198754;
+}
 
 
+.breadcrumb-link--active{
+  color:#198754;
+  font-weight: 500;
+}
 
 
 /*Styling for the Jumbotron*/
