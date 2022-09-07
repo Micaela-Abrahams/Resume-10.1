@@ -82,10 +82,11 @@ display: inline-block;
     background-size: cover;
     height:900px;
     margin-top: 20px;
+    color: black;
 
    /*Background Image is too distracting - therefore removed*/ 
-   /* background-image: url(images/pattern\ 1.1.jpg);
-    background-size: cover;*/
+   background-image: url(images/pattern\ 1.2.jpg);
+    background-size: cover;
   }
 
   .jumbotron img:hover{
@@ -97,6 +98,7 @@ display: inline-block;
 /*Style to center the images in the carousel as the images are on the left*/
 .carousel-inner .carousel-item img{
 margin: auto;
+border-radius: 5px;
 }
 
   /*Style for the Contents to make the text line underneath equally*/
