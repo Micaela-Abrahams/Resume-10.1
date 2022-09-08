@@ -1,117 +1,150 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 /*Added a background image to add more character*/
-body{
-width: 100%;
-position: fixed;
+body {
+  width: 100%;
+  position: fixed;
 }
 
 /*Added margin to left side of text to move it away from the edge of the margin*/
-  .navbar-brand{
-    margin-left: 30px;
-  }
+.navbar-brand {
+  margin-left: 30px;
+}
 
-  .navbar{
-    width: 100%;
-  }
+.navbar {
+  width: 100%;
+}
 
 /*Style for the items inside the NavBar*/
 /*Style for NAVIGATION BAR - added green hover effect with pointer cursor*/
-.nav-item{
-   cursor:pointer;
-   list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
-    float: left;
+.nav-item {
+  cursor: pointer;
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+  float: left;
 }
 
-.nav-item::after{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #198754;
-    display: block;
-   margin: left; 
-    transition: 0.5s;
+.nav-item::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #198754;
+  display: block;
+  margin: left;
+  transition: 0.5s;
 }
 
-.nav-item:hover::after{
-    width: 100%;
+.nav-item:hover::after {
+  width: 100%;
 }
 
 /*Style for the Breadcrumbs*/
-.breadcrumbs{
+.breadcrumbs {
   padding: 5px;
   font-family: sans-serif;
 }
 
-.breadcrumb-items{
-display: inline-block;
+.breadcrumb-items {
+  display: inline-block;
 }
 
-.breadcrumb-items:not(:last-of-type)::after{
+.breadcrumb-items:not(:last-of-type)::after {
   content: '/';
   margin: 0 5px;
   color: white;
 }
 
-.breadcrumb-link{
+.breadcrumb-link {
   text-decoration: none;
   color: white;
 }
 
-.breadcrumb-link:hover{
+.breadcrumb-link:hover {
   text-decoration: underline;
   color: #198754;
 }
 
 
-.breadcrumb-link--active{
-  color:#198754;
+.breadcrumb-link--active {
+  color: #198754;
   font-weight: 500;
 }
 
 
 /*Styling for the Jumbotron*/
 .jumbotron {
-    background-size: cover;
-    height:900px;
-    margin-top: 20px;
-    color: black;
-
-   /*Background Image is too distracting - therefore removed*/ 
-   background-image: url(images/pattern\ 1.2.jpg);
-    background-size: cover;
-  }
-
-  .jumbotron img:hover{
-    transform: scale(1.05);
-    transition: 0.5s;
-    background-color: rgb(62, 62, 62);
-  }
-
-/*Style to center the images in the carousel as the images are on the left*/
-.carousel-inner .carousel-item img{
-margin: auto;
-border-radius: 5px;
+  background-size: cover;
+  height: 900px;
+  margin-top: 20px;
+  background-image: url(images/pattern\ 1.2.jpg);
+  background-size: cover;
+  color: #198754;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-  /*Style for the Contents to make the text line underneath equally*/
-#container{
+.jumbotron img:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+  background-color: rgb(62, 62, 62);
+}
+
+/*Style to center the images in the carousel as the images are on the left*/
+.carousel-inner .carousel-item img {
+  margin: auto;
+  border-radius: 5px;
+}
+
+.container-jumbotron h2{
+color: black;
+text-transform: uppercase;
+display: block;
+transform: translateX(20%, 20%);
+font-weight:350;
+letter-spacing: 6px;
+animation: h1 5s 1;
+}
+
+.container-jumbotron h3{
+  color: black;
+  font-weight: 350;
+}
+
+@keyframes h1 {
+  0%{
+    color: black;
+    margin-bottom: -30px;
+  } 
+
+  25%{
+    letter-spacing: 25px;
+    margin-bottom: -30px;
+  }
+  
+}
+
+/*Style for the Contents to make the text line underneath equally*/
+#container {
   text-align: start;
   padding-left: 5%;
   padding-right: 5%;
 }
 
- /*Style for the cards under experience*/
-#experience{
+#picture-element{
+  float: left;
+  padding-right: 7px;
+}
+
+/*Style for the cards under experience*/
+#experience {
   text-align: center;
 }
+
 .container {
   display: flex;
   box-sizing: border-box;
@@ -119,23 +152,23 @@ border-radius: 5px;
   flex-wrap: wrap;
 }
 
-.card{
+.card {
   width: 30%;
   height: 50%;
   margin: 1.5%;
-  background:rgb(62, 62, 62);
+  background: rgb(62, 62, 62);
   text-align: center;
   padding-left: 2%;
   padding-right: 2%;
   padding-top: 1%;
 }
 
-.container p{
+.container p {
   text-align: left;
 }
 
-.card:hover{
-  background-color:#198754; 
+.card:hover {
+  background-color: #198754;
   transform: scale(1.05);
   transition: 0.5s;
   cursor: pointer;
@@ -174,31 +207,33 @@ border-radius: 5px;
 
 /*Style for the Contact Form*/
 
-#contact{
+#contact {
   text-align: center;
 }
 
-#Main-Container{
+#Main-Container {
   display: inline;
   justify-content: center;
   padding: 2px 2px 2px 1px;
 }
+
 form {
   width: 40%;
-  align-items:center;
+  align-items: center;
   background: rgb(62, 62, 62);
   padding-left: 10px;
   border-radius: 5px;
   margin-left: 32%;
 }
 
-input, textarea {
+input,
+textarea {
   width: calc(100% - 18px);
   padding: 8px;
   margin-bottom: 20px;
   border: 1px solid grey;
   outline: none;
-  }
+}
 
 input {
   margin: 10px;
@@ -225,32 +260,34 @@ form button:hover {
 
 /*Style to add spacing between the Icons in the footer because they were clustered together */
 footer a {
-  margin: 5px;  
+  margin: 5px;
 }
 
 /*Media Queries to make certain elements more centered/adaptive*/
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
+
   /*Media query for the Skills container cards to make it adaptive to the viewport size*/
-  .container{
+  .container {
     width: 100%;
   }
 
-  form{
+  form {
     width: 50%;
     margin: auto;
   }
 
-  #contact{
+  #contact {
     text-align: center;
   }
 }
 
 @media screen and (max-width:768px) {
-  .card{
+  .card {
     width: 100%;
   }
-  form{
+
+  form {
     width: 100%;
   }
 }
